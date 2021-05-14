@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D33870F8264E3A520047D6C5 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870F7264E3A520047D6C5 /* Tests_iOS.swift */; };
+		D3387103264E3A520047D6C5 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3387102264E3A520047D6C5 /* Tests_macOS.swift */; };
+		D3387105264E3A520047D6C5 /* MoonwalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870DC264E3A510047D6C5 /* MoonwalkApp.swift */; };
+		D3387106264E3A520047D6C5 /* MoonwalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870DC264E3A510047D6C5 /* MoonwalkApp.swift */; };
+		D3387107264E3A520047D6C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870DD264E3A510047D6C5 /* ContentView.swift */; };
+		D3387108264E3A520047D6C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870DD264E3A510047D6C5 /* ContentView.swift */; };
+		D3387109264E3A520047D6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33870DE264E3A520047D6C5 /* Assets.xcassets */; };
+		D338710A264E3A520047D6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33870DE264E3A520047D6C5 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D33870F4264E3A520047D6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D33870D7264E3A510047D6C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D33870E2264E3A520047D6C5;
+			remoteInfo = "Moonwalk (iOS)";
+		};
+		D33870FF264E3A520047D6C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D33870D7264E3A510047D6C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D33870EA264E3A520047D6C5;
+			remoteInfo = "Moonwalk (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D33870DC264E3A510047D6C5 /* MoonwalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonwalkApp.swift; sourceTree = "<group>"; };
+		D33870DD264E3A510047D6C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D33870DE264E3A520047D6C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D33870E3264E3A520047D6C5 /* Moonwalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonwalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33870E6264E3A520047D6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33870EB264E3A520047D6C5 /* Moonwalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonwalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33870ED264E3A520047D6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33870EE264E3A520047D6C5 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D33870F3264E3A520047D6C5 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33870F7264E3A520047D6C5 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		D33870F9264E3A520047D6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33870FE264E3A520047D6C5 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3387102264E3A520047D6C5 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		D3387104264E3A520047D6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D33870E0264E3A520047D6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33870E8264E3A520047D6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33870F0264E3A520047D6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33870FB264E3A520047D6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D33870D6264E3A510047D6C5 = {
+			isa = PBXGroup;
+			children = (
+				D33870DB264E3A510047D6C5 /* Shared */,
+				D33870E5264E3A520047D6C5 /* iOS */,
+				D33870EC264E3A520047D6C5 /* macOS */,
+				D33870F6264E3A520047D6C5 /* Tests iOS */,
+				D3387101264E3A520047D6C5 /* Tests macOS */,
+				D33870E4264E3A520047D6C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D33870DB264E3A510047D6C5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D33870DC264E3A510047D6C5 /* MoonwalkApp.swift */,
+				D33870DD264E3A510047D6C5 /* ContentView.swift */,
+				D33870DE264E3A520047D6C5 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		D33870E4264E3A520047D6C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D33870E3264E3A520047D6C5 /* Moonwalk.app */,
+				D33870EB264E3A520047D6C5 /* Moonwalk.app */,
+				D33870F3264E3A520047D6C5 /* Tests iOS.xctest */,
+				D33870FE264E3A520047D6C5 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D33870E5264E3A520047D6C5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D33870E6264E3A520047D6C5 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		D33870EC264E3A520047D6C5 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D33870ED264E3A520047D6C5 /* Info.plist */,
+				D33870EE264E3A520047D6C5 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		D33870F6264E3A520047D6C5 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D33870F7264E3A520047D6C5 /* Tests_iOS.swift */,
+				D33870F9264E3A520047D6C5 /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		D3387101264E3A520047D6C5 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				D3387102264E3A520047D6C5 /* Tests_macOS.swift */,
+				D3387104264E3A520047D6C5 /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D33870E2264E3A520047D6C5 /* Moonwalk (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D338710D264E3A520047D6C5 /* Build configuration list for PBXNativeTarget "Moonwalk (iOS)" */;
+			buildPhases = (
+				D33870DF264E3A520047D6C5 /* Sources */,
+				D33870E0264E3A520047D6C5 /* Frameworks */,
+				D33870E1264E3A520047D6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Moonwalk (iOS)";
+			productName = "Moonwalk (iOS)";
+			productReference = D33870E3264E3A520047D6C5 /* Moonwalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D33870EA264E3A520047D6C5 /* Moonwalk (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3387110264E3A520047D6C5 /* Build configuration list for PBXNativeTarget "Moonwalk (macOS)" */;
+			buildPhases = (
+				D33870E7264E3A520047D6C5 /* Sources */,
+				D33870E8264E3A520047D6C5 /* Frameworks */,
+				D33870E9264E3A520047D6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Moonwalk (macOS)";
+			productName = "Moonwalk (macOS)";
+			productReference = D33870EB264E3A520047D6C5 /* Moonwalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D33870F2264E3A520047D6C5 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3387113264E3A520047D6C5 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				D33870EF264E3A520047D6C5 /* Sources */,
+				D33870F0264E3A520047D6C5 /* Frameworks */,
+				D33870F1264E3A520047D6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D33870F5264E3A520047D6C5 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = D33870F3264E3A520047D6C5 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D33870FD264E3A520047D6C5 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3387116264E3A520047D6C5 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				D33870FA264E3A520047D6C5 /* Sources */,
+				D33870FB264E3A520047D6C5 /* Frameworks */,
+				D33870FC264E3A520047D6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3387100264E3A520047D6C5 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = D33870FE264E3A520047D6C5 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D33870D7264E3A510047D6C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D33870E2264E3A520047D6C5 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					D33870EA264E3A520047D6C5 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					D33870F2264E3A520047D6C5 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = D33870E2264E3A520047D6C5;
+					};
+					D33870FD264E3A520047D6C5 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = D33870EA264E3A520047D6C5;
+					};
+				};
+			};
+			buildConfigurationList = D33870DA264E3A510047D6C5 /* Build configuration list for PBXProject "Moonwalk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D33870D6264E3A510047D6C5;
+			productRefGroup = D33870E4264E3A520047D6C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D33870E2264E3A520047D6C5 /* Moonwalk (iOS) */,
+				D33870EA264E3A520047D6C5 /* Moonwalk (macOS) */,
+				D33870F2264E3A520047D6C5 /* Tests iOS */,
+				D33870FD264E3A520047D6C5 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D33870E1264E3A520047D6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3387109264E3A520047D6C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33870E9264E3A520047D6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D338710A264E3A520047D6C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33870F1264E3A520047D6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33870FC264E3A520047D6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D33870DF264E3A520047D6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3387107264E3A520047D6C5 /* ContentView.swift in Sources */,
+				D3387105264E3A520047D6C5 /* MoonwalkApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33870E7264E3A520047D6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3387108264E3A520047D6C5 /* ContentView.swift in Sources */,
+				D3387106264E3A520047D6C5 /* MoonwalkApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33870EF264E3A520047D6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33870F8264E3A520047D6C5 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33870FA264E3A520047D6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3387103264E3A520047D6C5 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D33870F5264E3A520047D6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D33870E2264E3A520047D6C5 /* Moonwalk (iOS) */;
+			targetProxy = D33870F4264E3A520047D6C5 /* PBXContainerItemProxy */;
+		};
+		D3387100264E3A520047D6C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D33870EA264E3A520047D6C5 /* Moonwalk (macOS) */;
+			targetProxy = D33870FF264E3A520047D6C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D338710B264E3A520047D6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D338710C264E3A520047D6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D338710E264E3A520047D6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5J7ADUW222;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.brianyu.Moonwalk;
+				PRODUCT_NAME = Moonwalk;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D338710F264E3A520047D6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5J7ADUW222;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.brianyu.Moonwalk;
+				PRODUCT_NAME = Moonwalk;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3387111264E3A520047D6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5J7ADUW222;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.brianyu.Moonwalk;
+				PRODUCT_NAME = Moonwalk;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D3387112264E3A520047D6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5J7ADUW222;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.brianyu.Moonwalk;
+				PRODUCT_NAME = Moonwalk;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D3387114264E3A520047D6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5J7ADUW222;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.brianyu.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Moonwalk (iOS)";
+			};
+			name = Debug;
+		};
+		D3387115264E3A520047D6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5J7ADUW222;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "me.brianyu.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Moonwalk (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3387117264E3A520047D6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5J7ADUW222;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.brianyu.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Moonwalk (macOS)";
+			};
+			name = Debug;
+		};
+		D3387118264E3A520047D6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5J7ADUW222;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.brianyu.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Moonwalk (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D33870DA264E3A510047D6C5 /* Build configuration list for PBXProject "Moonwalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D338710B264E3A520047D6C5 /* Debug */,
+				D338710C264E3A520047D6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D338710D264E3A520047D6C5 /* Build configuration list for PBXNativeTarget "Moonwalk (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D338710E264E3A520047D6C5 /* Debug */,
+				D338710F264E3A520047D6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3387110264E3A520047D6C5 /* Build configuration list for PBXNativeTarget "Moonwalk (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3387111264E3A520047D6C5 /* Debug */,
+				D3387112264E3A520047D6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3387113264E3A520047D6C5 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3387114264E3A520047D6C5 /* Debug */,
+				D3387115264E3A520047D6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3387116264E3A520047D6C5 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3387117264E3A520047D6C5 /* Debug */,
+				D3387118264E3A520047D6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D33870D7264E3A510047D6C5 /* Project object */;
+}
