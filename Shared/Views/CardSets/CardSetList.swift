@@ -25,7 +25,15 @@ struct CardSetList: View {
                 }
 
                 List(self.cardSets) { cardSet in
-                    Text(cardSet.title)
+                    
+                    NavigationLink(destination: CardSetDetail(cardSet: cardSet)) {
+                        HStack {
+                            Image(systemName: "rectangle.on.rectangle.angled")
+                                .foregroundColor(.blue)
+                            Text(cardSet.title)
+                        }
+                    }
+                    
                 }.onAppear(perform: {
                     updateCardSets()
                 })
@@ -43,6 +51,9 @@ struct CardSetList: View {
                             NewCardSetSheet()
                         }
                     }
+                }
+                .toolbar {
+                    EditButton()
                 }
                 .overlay(Group {
                     if self.cardSets.isEmpty {

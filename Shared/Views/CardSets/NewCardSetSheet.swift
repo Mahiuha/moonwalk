@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Introspect
 
 struct NewCardSetSheet: View {
     
@@ -16,11 +17,18 @@ struct NewCardSetSheet: View {
         NavigationView {
             VStack {
                 Form {
-                    TextField("Name", text: $newCardSetTitle)
+                    TextField("Card Set Title", text: $newCardSetTitle)
+                        .introspectTextField { textField in
+                            textField.becomeFirstResponder()
+                        }
+
                 }
             }
-            .navigationTitle("New Card Set")
             .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("New Card Set")
+                        .fontWeight(.bold)
+                }
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") {
                         presentationMode.wrappedValue.dismiss()
@@ -36,6 +44,7 @@ struct NewCardSetSheet: View {
             }
         }
         
+            
     }
 }
 

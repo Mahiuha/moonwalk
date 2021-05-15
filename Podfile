@@ -7,6 +7,7 @@ target 'Moonwalk (iOS)' do
 
   # Pods for Moonwalk (iOS)
   pod 'SQLite.swift', '~> 0.12.0'
+  pod 'Introspect'
 
 end
 
