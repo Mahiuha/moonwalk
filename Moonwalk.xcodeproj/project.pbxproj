@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B8A09B44621973C72B054D2 /* Pods_Moonwalk__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CEB78407F5C8160BFAE8C1 /* Pods_Moonwalk__macOS_.framework */; };
+		4C99D71536FFE95C200918CD /* Pods_Moonwalk__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE80FD6C1A014B038421B3E /* Pods_Moonwalk__iOS_.framework */; };
+		D33036A6264F0D4100CA6F0C /* CardSetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33036A5264F0D4100CA6F0C /* CardSetModel.swift */; };
+		D33036A8264F203500CA6F0C /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33036A7264F203500CA6F0C /* DBManager.swift */; };
+		D33036AA264F3CF700CA6F0C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33036A9264F3CF700CA6F0C /* SettingsView.swift */; };
 		D33870F8264E3A520047D6C5 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870F7264E3A520047D6C5 /* Tests_iOS.swift */; };
 		D3387103264E3A520047D6C5 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3387102264E3A520047D6C5 /* Tests_macOS.swift */; };
 		D3387105264E3A520047D6C5 /* MoonwalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870DC264E3A510047D6C5 /* MoonwalkApp.swift */; };
@@ -15,6 +20,7 @@
 		D3387108264E3A520047D6C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33870DD264E3A510047D6C5 /* ContentView.swift */; };
 		D3387109264E3A520047D6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33870DE264E3A520047D6C5 /* Assets.xcassets */; };
 		D338710A264E3A520047D6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33870DE264E3A520047D6C5 /* Assets.xcassets */; };
+		D3F0D0C3264F3F7E002B75E0 /* CardSetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D0C2264F3F7E002B75E0 /* CardSetList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07CEB78407F5C8160BFAE8C1 /* Pods_Moonwalk__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moonwalk__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B8F1DCD953080C387C28E5 /* Pods-Moonwalk (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonwalk (iOS).debug.xcconfig"; path = "Target Support Files/Pods-Moonwalk (iOS)/Pods-Moonwalk (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		91380270CEE7A3BC15AE7680 /* Pods-Moonwalk (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonwalk (macOS).debug.xcconfig"; path = "Target Support Files/Pods-Moonwalk (macOS)/Pods-Moonwalk (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		9EBDE91C43A170A8EA5D17EA /* Pods-Moonwalk (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonwalk (iOS).release.xcconfig"; path = "Target Support Files/Pods-Moonwalk (iOS)/Pods-Moonwalk (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		D33036A5264F0D4100CA6F0C /* CardSetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetModel.swift; sourceTree = "<group>"; };
+		D33036A7264F203500CA6F0C /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		D33036A9264F3CF700CA6F0C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D33870DC264E3A510047D6C5 /* MoonwalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonwalkApp.swift; sourceTree = "<group>"; };
 		D33870DD264E3A510047D6C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D33870DE264E3A520047D6C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +62,9 @@
 		D33870FE264E3A520047D6C5 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3387102264E3A520047D6C5 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D3387104264E3A520047D6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3F0D0C2264F3F7E002B75E0 /* CardSetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetList.swift; sourceTree = "<group>"; };
+		DCE80FD6C1A014B038421B3E /* Pods_Moonwalk__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moonwalk__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E87568C2F9980A5437538C0B /* Pods-Moonwalk (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonwalk (macOS).release.xcconfig"; path = "Target Support Files/Pods-Moonwalk (macOS)/Pods-Moonwalk (macOS).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C99D71536FFE95C200918CD /* Pods_Moonwalk__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8A09B44621973C72B054D2 /* Pods_Moonwalk__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13DB1506E773F99807BE4EAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45B8F1DCD953080C387C28E5 /* Pods-Moonwalk (iOS).debug.xcconfig */,
+				9EBDE91C43A170A8EA5D17EA /* Pods-Moonwalk (iOS).release.xcconfig */,
+				91380270CEE7A3BC15AE7680 /* Pods-Moonwalk (macOS).debug.xcconfig */,
+				E87568C2F9980A5437538C0B /* Pods-Moonwalk (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		48ED8F62DB86428B8220E8CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCE80FD6C1A014B038421B3E /* Pods_Moonwalk__iOS_.framework */,
+				07CEB78407F5C8160BFAE8C1 /* Pods_Moonwalk__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D33036A0264F05FC00CA6F0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D33870DD264E3A510047D6C5 /* ContentView.swift */,
+				D33036A9264F3CF700CA6F0C /* SettingsView.swift */,
+				D33036A1264F060600CA6F0C /* CardSets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D33036A1264F060600CA6F0C /* CardSets */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0D0C2264F3F7E002B75E0 /* CardSetList.swift */,
+			);
+			path = CardSets;
+			sourceTree = "<group>";
+		};
+		D33036A4264F0C4100CA6F0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D33036A5264F0D4100CA6F0C /* CardSetModel.swift */,
+				D33036A7264F203500CA6F0C /* DBManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D33870D6264E3A510047D6C5 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +157,8 @@
 				D33870F6264E3A520047D6C5 /* Tests iOS */,
 				D3387101264E3A520047D6C5 /* Tests macOS */,
 				D33870E4264E3A520047D6C5 /* Products */,
+				13DB1506E773F99807BE4EAB /* Pods */,
+				48ED8F62DB86428B8220E8CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				D33870DC264E3A510047D6C5 /* MoonwalkApp.swift */,
-				D33870DD264E3A510047D6C5 /* ContentView.swift */,
+				D33036A0264F05FC00CA6F0C /* Views */,
+				D33036A4264F0C4100CA6F0C /* Model */,
 				D33870DE264E3A520047D6C5 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -158,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D338710D264E3A520047D6C5 /* Build configuration list for PBXNativeTarget "Moonwalk (iOS)" */;
 			buildPhases = (
+				25EDDD7CF680A84B4A0C0E64 /* [CP] Check Pods Manifest.lock */,
 				D33870DF264E3A520047D6C5 /* Sources */,
 				D33870E0264E3A520047D6C5 /* Frameworks */,
 				D33870E1264E3A520047D6C5 /* Resources */,
+				D0038C72ED2A17D388EE96FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3387110264E3A520047D6C5 /* Build configuration list for PBXNativeTarget "Moonwalk (macOS)" */;
 			buildPhases = (
+				0739029B0B91A64F6C39C3F9 /* [CP] Check Pods Manifest.lock */,
 				D33870E7264E3A520047D6C5 /* Sources */,
 				D33870E8264E3A520047D6C5 /* Frameworks */,
 				D33870E9264E3A520047D6C5 /* Resources */,
@@ -303,12 +374,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0739029B0B91A64F6C39C3F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moonwalk (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25EDDD7CF680A84B4A0C0E64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moonwalk (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0038C72ED2A17D388EE96FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moonwalk (iOS)/Pods-Moonwalk (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moonwalk (iOS)/Pods-Moonwalk (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moonwalk (iOS)/Pods-Moonwalk (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D33870DF264E3A520047D6C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D33036A8264F203500CA6F0C /* DBManager.swift in Sources */,
+				D33036A6264F0D4100CA6F0C /* CardSetModel.swift in Sources */,
 				D3387107264E3A520047D6C5 /* ContentView.swift in Sources */,
+				D33036AA264F3CF700CA6F0C /* SettingsView.swift in Sources */,
+				D3F0D0C3264F3F7E002B75E0 /* CardSetList.swift in Sources */,
 				D3387105264E3A520047D6C5 /* MoonwalkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +606,7 @@
 		};
 		D338710E264E3A520047D6C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45B8F1DCD953080C387C28E5 /* Pods-Moonwalk (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -479,6 +619,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.brianyu.Moonwalk;
 				PRODUCT_NAME = Moonwalk;
 				SDKROOT = iphoneos;
@@ -489,6 +630,7 @@
 		};
 		D338710F264E3A520047D6C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EBDE91C43A170A8EA5D17EA /* Pods-Moonwalk (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -501,6 +643,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.brianyu.Moonwalk;
 				PRODUCT_NAME = Moonwalk;
 				SDKROOT = iphoneos;
@@ -512,6 +655,7 @@
 		};
 		D3387111264E3A520047D6C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91380270CEE7A3BC15AE7680 /* Pods-Moonwalk (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -536,6 +680,7 @@
 		};
 		D3387112264E3A520047D6C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E87568C2F9980A5437538C0B /* Pods-Moonwalk (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
