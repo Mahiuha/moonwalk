@@ -97,6 +97,15 @@ struct DBManager {
             print(error.localizedDescription)
         }
     }
+    
+    func deleteCardSets(cardSetIds: [Int]) {
+        do {
+            let objects = cardSets.filter(cardSetIds.map{ Int64($0) }.contains(cardSet_id))
+            try db.run(objects.delete())
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
 }
 
 var DB = DBManager()

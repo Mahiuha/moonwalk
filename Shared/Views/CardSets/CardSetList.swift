@@ -23,17 +23,18 @@ struct CardSetList: View {
                 NavigationLink(destination: SettingsView(), isActive: $showingSettings) {
                     EmptyView()
                 }
-
-                List(self.cardSets) { cardSet in
-                    
-                    NavigationLink(destination: CardSetDetail(cardSet: cardSet)) {
-                        HStack {
-                            Image(systemName: "rectangle.on.rectangle.angled")
-                                .foregroundColor(.blue)
-                            Text(cardSet.title)
+                
+                List() {
+                    ForEach(cardSets) { cardSet in
+                        NavigationLink(destination: CardSetDetail(cardSet: cardSet)) {
+                            HStack {
+                                Image(systemName: "rectangle.on.rectangle.angled")
+                                    .foregroundColor(.blue)
+                                Text(cardSet.title)
+                            }
                         }
                     }
-                    
+                    .onDelete(perform: deleteCardSet)
                 }.onAppear(perform: {
                     updateCardSets()
                 })
@@ -79,8 +80,13 @@ struct CardSetList: View {
     }
     
     func updateCardSets() {
-        print("Updating card sets...")
         self.cardSets = DB.getCardSets()
+    }
+    
+    func deleteCardSet(at offsets: IndexSet) {
+        let cardSetIds = offsets.map { cardSets[$0].id }
+        DB.deleteCardSets(cardSetIds: cardSetIds)
+        updateCardSets()
     }
 }
 
