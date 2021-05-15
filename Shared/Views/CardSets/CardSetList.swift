@@ -9,23 +9,25 @@ import SwiftUI
 
 struct CardSetList: View {
     
-    @State var shouldShowSettings: Bool = false
+    @State var showingSettings: Bool = false
+    @State var showingNewCardSet : Bool = false
+    
     @State var cardSets: [CardSetModel] = []
     
     var body: some View {
         
         NavigationView {
             
-            HStack {
-                
-                NavigationLink(destination: SettingsView(), isActive: $shouldShowSettings) {
+            VStack {
+
+                NavigationLink(destination: SettingsView(), isActive: $showingSettings) {
                     EmptyView()
                 }
-                
+
                 List(self.cardSets) { cardSet in
                     Text(cardSet.title)
                 }.onAppear(perform: {
-                    self.cardSets = DB.getCardSets()
+                    updateCardSets()
                 })
                 .navigationTitle("Card Sets")
                 .toolbar {
@@ -37,12 +39,15 @@ struct CardSetList: View {
                         Button(action: createNewCardSet) {
                             Image(systemName: "plus")
                         }
+                        .sheet(isPresented: $showingNewCardSet, onDismiss: updateCardSets) {
+                            NewCardSetSheet()
+                        }
                     }
                 }
                 .overlay(Group {
                     if self.cardSets.isEmpty {
                         Text("No card sets to study.")
-                        Text("Click ")
+                        Text("Tap ")
                             + Text(Image(systemName: "plus")).foregroundColor(.blue)
                             + Text(" to create a new set.")
                     }
@@ -55,11 +60,16 @@ struct CardSetList: View {
     }
     
     func showSettings() {
-        shouldShowSettings = true
+        showingSettings = true
     }
     
     func createNewCardSet() {
-        
+        showingNewCardSet.toggle()
+    }
+    
+    func updateCardSets() {
+        print("Updating card sets...")
+        self.cardSets = DB.getCardSets()
     }
 }
 

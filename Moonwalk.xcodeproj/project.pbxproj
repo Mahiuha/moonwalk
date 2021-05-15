@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B8A09B44621973C72B054D2 /* Pods_Moonwalk__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CEB78407F5C8160BFAE8C1 /* Pods_Moonwalk__macOS_.framework */; };
 		4C99D71536FFE95C200918CD /* Pods_Moonwalk__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE80FD6C1A014B038421B3E /* Pods_Moonwalk__iOS_.framework */; };
+		D3201607264F8E04002A577E /* NewCardSetSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3201606264F8E04002A577E /* NewCardSetSheet.swift */; };
 		D33036A6264F0D4100CA6F0C /* CardSetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33036A5264F0D4100CA6F0C /* CardSetModel.swift */; };
 		D33036A8264F203500CA6F0C /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33036A7264F203500CA6F0C /* DBManager.swift */; };
 		D33036AA264F3CF700CA6F0C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33036A9264F3CF700CA6F0C /* SettingsView.swift */; };
@@ -45,6 +46,7 @@
 		45B8F1DCD953080C387C28E5 /* Pods-Moonwalk (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonwalk (iOS).debug.xcconfig"; path = "Target Support Files/Pods-Moonwalk (iOS)/Pods-Moonwalk (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		91380270CEE7A3BC15AE7680 /* Pods-Moonwalk (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonwalk (macOS).debug.xcconfig"; path = "Target Support Files/Pods-Moonwalk (macOS)/Pods-Moonwalk (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		9EBDE91C43A170A8EA5D17EA /* Pods-Moonwalk (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moonwalk (iOS).release.xcconfig"; path = "Target Support Files/Pods-Moonwalk (iOS)/Pods-Moonwalk (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		D3201606264F8E04002A577E /* NewCardSetSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardSetSheet.swift; sourceTree = "<group>"; };
 		D33036A5264F0D4100CA6F0C /* CardSetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetModel.swift; sourceTree = "<group>"; };
 		D33036A7264F203500CA6F0C /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		D33036A9264F3CF700CA6F0C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				D3F0D0C2264F3F7E002B75E0 /* CardSetList.swift */,
+				D3201606264F8E04002A577E /* NewCardSetSheet.swift */,
 			);
 			path = CardSets;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				D33036AA264F3CF700CA6F0C /* SettingsView.swift in Sources */,
 				D3F0D0C3264F3F7E002B75E0 /* CardSetList.swift in Sources */,
 				D3387105264E3A520047D6C5 /* MoonwalkApp.swift in Sources */,
+				D3201607264F8E04002A577E /* NewCardSetSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +618,7 @@
 				DEVELOPMENT_TEAM = 5J7ADUW222;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -638,7 +642,7 @@
 				DEVELOPMENT_TEAM = 5J7ADUW222;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

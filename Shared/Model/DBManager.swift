@@ -17,7 +17,7 @@ struct DBManager {
     private var cardSets: Table!
     private var cardSet_id: Expression<Int64>!
     private var cardSet_title: Expression<String>!
-    private var cardSet_description: Expression<String>!
+    private var cardSet_description: Expression<String?>!
     
     private let defaults_db_created_key: String = "is_db_created"
     
@@ -34,7 +34,7 @@ struct DBManager {
             cardSets = Table("cardSets")
             cardSet_id = Expression<Int64>("id")
             cardSet_title = Expression<String>("title")
-            cardSet_description = Expression<String>("description")
+            cardSet_description = Expression<String?>("description")
             
             if (!UserDefaults.standard.bool(forKey: defaults_db_created_key)) {
                 try db.run(cardSets.create { t in
@@ -62,6 +62,18 @@ struct DBManager {
         return documentsDirectory
     }
     
+    func dropAllTables() {
+        let tables: [Table] = [cardSets]
+        for table in tables {
+            do {
+                try db.run(table.drop())
+            } catch let error {
+                print(error)
+            }
+        }
+        UserDefaults.standard.set(false, forKey: defaults_db_created_key)
+    }
+    
     func getCardSets() -> [CardSetModel] {
         var models: [CardSetModel] = []
         do {
@@ -69,15 +81,22 @@ struct DBManager {
                 let model: CardSetModel = CardSetModel()
                 model.id = Int(cardSet[cardSet_id])
                 model.title = cardSet[cardSet_title]
-                model.description = cardSet[cardSet_description]
+                model.description = cardSet[cardSet_description] ?? ""
                 models.append(model)
             }
         } catch {
             print(error.localizedDescription)
         }
-        print(models)
         return models
+    }
+    
+    func createCardSet(named title: String) {
+        do {
+            try db.run(cardSets.insert(cardSet_title <- title))
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
 }
 
-let DB = DBManager()
+var DB = DBManager()
