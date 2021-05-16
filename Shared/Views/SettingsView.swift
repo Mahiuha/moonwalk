@@ -13,26 +13,31 @@ struct SettingsView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        List {
-
-            Button("Delete All Card Set Data") {
-                showConfirmDeleteData = true
+        
+        Form {
+            
+            Section {
+                Button("Delete All Card Set Data") {
+                    showConfirmDeleteData = true
+                }
+                .foregroundColor(Color.red)
+                .alert(isPresented: $showConfirmDeleteData) {
+                    Alert(
+                        title: Text("Are you sure you want to delete all card set data?"),
+                        message: Text("This action cannot be undone."),
+                        primaryButton: .destructive(Text("Confirm Delete")) {
+                            DB.dropAllTables()
+                            DB.createTables()
+                            presentationMode.wrappedValue.dismiss()
+                        },
+                        secondaryButton: .cancel()
+                    )
+                }
             }
-            .foregroundColor(Color.red)
-            .alert(isPresented: $showConfirmDeleteData) {
-                Alert(
-                    title: Text("Are you sure you want to delete all card set data?"),
-                    message: Text("This action cannot be undone."),
-                    primaryButton: .destructive(Text("Confirm Delete")) {
-                        DB.dropAllTables()
-                        DB.createTables()
-                        presentationMode.wrappedValue.dismiss()
-                    },
-                    secondaryButton: .cancel()
-                )
-            }
+            
         }
-        .navigationBarTitle("Settings")
+        .navigationTitle("Settings")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

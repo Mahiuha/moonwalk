@@ -9,6 +9,7 @@ import Foundation
 
 class CardSetModel: Identifiable {
     public var id: Int = 0
+    public var order: Int = 0
     public var title: String = ""
     public var description: String = ""
 }

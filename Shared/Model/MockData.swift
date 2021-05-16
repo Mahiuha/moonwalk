@@ -14,4 +14,12 @@ struct MockData {
         model.description = "Description of card set."
         return model
     }
+    
+    var card: CardModel {
+        let model: CardModel = CardModel()
+        model.id = 1
+        model.term = "Term Name"
+        model.definition = "Definition of term."
+        return model
+    }
 }

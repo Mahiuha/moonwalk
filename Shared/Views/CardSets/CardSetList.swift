@@ -35,9 +35,9 @@ struct CardSetList: View {
                         }
                     }
                     .onDelete(perform: deleteCardSet)
-                }.onAppear(perform: {
-                    updateCardSets()
-                })
+                    .onMove(perform: moveCardSet)
+                }
+                .onAppear(perform: updateCardSets)
                 .navigationTitle("Card Sets")
                 .toolbar {
                     ToolbarItemGroup(placement: .bottomBar) {
@@ -68,7 +68,6 @@ struct CardSetList: View {
             }
 
         }
-        
     }
     
     func showSettings() {
@@ -85,7 +84,13 @@ struct CardSetList: View {
     
     func deleteCardSet(at offsets: IndexSet) {
         let cardSetIds = offsets.map { cardSets[$0].id }
-        DB.deleteCardSets(cardSetIds: cardSetIds)
+        DB.deleteCardSet(id: cardSetIds[0])
+        updateCardSets()
+    }
+    
+    func moveCardSet(source: IndexSet, destination: Int) {
+        cardSets.move(fromOffsets: source, toOffset: destination)
+        DB.updateCardSetOrdering(models: cardSets)
         updateCardSets()
     }
 }
