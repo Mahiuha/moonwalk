@@ -32,7 +32,13 @@ struct CardSetDetail: View {
                     }
                 }
                 
-                Text("Browse")
+                ZStack {
+                    Button("") {}
+                    NavigationLink(destination: Browser(cardSet: cardSet, cards: cards)) {
+                        Text("Browse")
+                    }
+                }
+                
                 Text("Review")
                 Text("Play")
             }
@@ -87,7 +93,6 @@ struct CardSetDetail: View {
     
     func updateCards() {
         self.cards = DB.getCardsForSetId(setId: cardSet.id)
-        print(self.cards.map({$0.id}))
     }
     
     func updateCard(model: CardModel) {

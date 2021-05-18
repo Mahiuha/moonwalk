@@ -22,9 +22,10 @@
 		D3387109264E3A520047D6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33870DE264E3A520047D6C5 /* Assets.xcassets */; };
 		D338710A264E3A520047D6C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33870DE264E3A520047D6C5 /* Assets.xcassets */; };
 		D351F48826505B150092411C /* CardSetTitleEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D351F48726505B150092411C /* CardSetTitleEditor.swift */; };
-		D351F48A26507CFD0092411C /* TextBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D351F48926507CFD0092411C /* TextBinding.swift */; };
 		D3B383A12651B0A2009ABDCD /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B383A02651B0A2009ABDCD /* CardModel.swift */; };
 		D3B383A32651BE80009ABDCD /* CardEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B383A22651BE80009ABDCD /* CardEditor.swift */; };
+		D3B383A62651CA6D009ABDCD /* Browser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B383A52651CA6D009ABDCD /* Browser.swift */; };
+		D3B383A82651CDF1009ABDCD /* BrowserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B383A72651CDF1009ABDCD /* BrowserCard.swift */; };
 		D3CA0A5926504BC600EF2E77 /* CardSetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA0A5826504BC600EF2E77 /* CardSetDetail.swift */; };
 		D3CA0A5B26504D4B00EF2E77 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA0A5A26504D4B00EF2E77 /* MockData.swift */; };
 		D3F0D0C3264F3F7E002B75E0 /* CardSetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0D0C2264F3F7E002B75E0 /* CardSetList.swift */; };
@@ -71,9 +72,10 @@
 		D3387102264E3A520047D6C5 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D3387104264E3A520047D6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D351F48726505B150092411C /* CardSetTitleEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetTitleEditor.swift; sourceTree = "<group>"; };
-		D351F48926507CFD0092411C /* TextBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBinding.swift; sourceTree = "<group>"; };
 		D3B383A02651B0A2009ABDCD /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		D3B383A22651BE80009ABDCD /* CardEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEditor.swift; sourceTree = "<group>"; };
+		D3B383A52651CA6D009ABDCD /* Browser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browser.swift; sourceTree = "<group>"; };
+		D3B383A72651CDF1009ABDCD /* BrowserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserCard.swift; sourceTree = "<group>"; };
 		D3CA0A5826504BC600EF2E77 /* CardSetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetDetail.swift; sourceTree = "<group>"; };
 		D3CA0A5A26504D4B00EF2E77 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		D3F0D0C2264F3F7E002B75E0 /* CardSetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetList.swift; sourceTree = "<group>"; };
@@ -141,7 +143,7 @@
 				D33870DD264E3A510047D6C5 /* ContentView.swift */,
 				D33036A9264F3CF700CA6F0C /* SettingsView.swift */,
 				D33036A1264F060600CA6F0C /* CardSets */,
-				D351F48B26507D010092411C /* Utility */,
+				D3B383A42651CA4D009ABDCD /* Browser */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,12 +242,13 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
-		D351F48B26507D010092411C /* Utility */ = {
+		D3B383A42651CA4D009ABDCD /* Browser */ = {
 			isa = PBXGroup;
 			children = (
-				D351F48926507CFD0092411C /* TextBinding.swift */,
+				D3B383A52651CA6D009ABDCD /* Browser.swift */,
+				D3B383A72651CDF1009ABDCD /* BrowserCard.swift */,
 			);
-			path = Utility;
+			path = Browser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,10 +479,11 @@
 				D33036A6264F0D4100CA6F0C /* CardSetModel.swift in Sources */,
 				D3387107264E3A520047D6C5 /* ContentView.swift in Sources */,
 				D33036AA264F3CF700CA6F0C /* SettingsView.swift in Sources */,
+				D3B383A82651CDF1009ABDCD /* BrowserCard.swift in Sources */,
 				D3CA0A5B26504D4B00EF2E77 /* MockData.swift in Sources */,
 				D3B383A12651B0A2009ABDCD /* CardModel.swift in Sources */,
 				D3F0D0C3264F3F7E002B75E0 /* CardSetList.swift in Sources */,
-				D351F48A26507CFD0092411C /* TextBinding.swift in Sources */,
+				D3B383A62651CA6D009ABDCD /* Browser.swift in Sources */,
 				D3387105264E3A520047D6C5 /* MoonwalkApp.swift in Sources */,
 				D3B383A32651BE80009ABDCD /* CardEditor.swift in Sources */,
 				D3201607264F8E04002A577E /* NewCardSetSheet.swift in Sources */,

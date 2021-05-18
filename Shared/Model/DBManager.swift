@@ -45,7 +45,6 @@ struct DBManager {
     mutating func createTables() {
         do {
             
-            
             let documentsDirectory = getDocumentsDirectory()
             db = try Connection("\(documentsDirectory)/moonwalk.sqlite3")
             
